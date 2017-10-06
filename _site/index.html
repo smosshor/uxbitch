@@ -16,6 +16,13 @@
         <h1 class="project-name">uxbitch</h1>
         <h2 class="project-tagline"></h2>
 
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </section>
 
     <section class="main-content">
